@@ -1,0 +1,111 @@
+<header class="header">
+        <a href="#" class="logo">
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i> ShopperSite</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Products</a>
+            <a href="#brands">Our Brands</a>
+            <a href="#about">About Us</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            
+              {{#if lnLogged}}
+                <li class="nav-item dropdown">
+                    <a class="mb-1 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="public/image/user.png" class="user_icon" alt="profile-icon">
+                        {{ username }}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+
+                {{else}}
+                <button type="button" class="btn btn-outline-primary ms-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"><div class="fa fa-user">
+                    </div></button>
+                {{/if}}
+            </div>
+        </div>
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+
+        <!-- Shoping cart -->
+        <div class="shopping-cart">
+            <div class="box"></div>
+        </div>
+
+        <!-- Login Form -->
+        {{!-- <form action="#" class="login-form">
+            <h3>Login now</h3>
+            <input type="email" placeholder="Enter email.." class="box">
+            <input type="password" placeholder="Enter password.." class="box">
+            <p>Forgot your password <a href="#">click here</p></a>
+            <p>Don't have an account <a href="#">Create now</p></a>
+
+            <input type="submit" value="Login" class="btn">
+        </form> --}}
+
+    </header>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-5">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="POST" action="/useraccount">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">User Name</label>
+                        <input name="name" type="text" class="form-control" id="username" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" />
+                        <div id="emailHelp" class="form-text">We'll never share your email
+                            with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input name="phone" type="number" class="form-control" id="phone" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input name="password" type="password" class="form-control" id="exampleInputPassword1" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword2" class="form-label">Confirm
+                            Password</label>
+                        <input name="cpassword" type="password" class="form-control" id="exampleInputPassword2" />
+                    </div>
+                    <button class="reg-btn" name="submit" type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <p class="text-left ms-3">Already Have An Account?
+                <a href="#">click here</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Scrollable modal -->
+<div class="modal-dialog modal-dialog-scrollable">
+  ...
+</div>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/styles/style.css">
+
+    <!-- Swiperjs.com -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ShopperSite</title>
+</head>
+<body>
+    {{> nav}}
+    {{!-- Home Section --}}
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Start selling with <span>ShopperSite</span> today</h3>
+            <p>Lowest Prices Best Quality Shopping</p>
+            <a href="#" class="btn">Explore now</a>
+        </div>
+    </section>
+
+    {{!-- <!-- features Section --> --}}
+    <section class="features" id="features">
+        <h1 class="heading">Our <span>Features</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="../public/image/features1.png" alt="Sample photo!">
+                <h3>Best Quality Products</h3>
+                <p>Different brands with best Quality product at minimum Prices</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="box">
+                <img src="../public/image/features2.png" alt="Sample photo!">
+                <h3>Fast and Free delivery</h3>
+                <p>Ready to deliver at any time of the day or night, From store to your door</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            <div class="box">
+                <img src="../public/image/features3.png" alt="Sample photo!">
+                <h3>Fast And Secured Payment</h3>
+                <p>Offering Convenience And Hassle-Free Transactions</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </section>
+
+{{!-- Categories Section --}}
+
+    <section class="categories" id="categories">
+        <h1 class="heading">Product <span>Categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="../public/image/cloth.png" alt="Sample photo!">
+                <h3>Cloths Ordering</h3>
+                <p>Upto 45% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="box">
+                <img src="../public/image/shoes.jpg" alt="Sample photo!">
+                <h3>Shoes Ordering</h3>
+                <p>Upto 35% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="box">
+                <img src="../public/image/phone.png" alt="Sample photo!">
+                <h3>Phone Ordering</h3>
+                <p>Upto 40% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="box">
+                <img src="../public/image/sounds.png" alt="Sample photo!">
+                <h3>Earphones Ordering</h3>
+                <p>Upto 50% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h1 class="heading">Our <span>Products</span></h1>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="../public/image/cloths/jacket1.png" alt="Sample photo!">
+                    <h1>Denim Jacket</h1>
+                    <div class="price"> ₹700/- - ₹1200/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../public/image/shoes/shoes4.png" alt="Sample photo!">
+                    <h1>Air Jordan</h1>
+                    <div class="price"> ₹2500/- - ₹3200/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../public/image/mobile/phone1.png" alt="Sample photo!">
+                    <h1>Apple iphone 14 Pro Max</h1>
+                    <div class="price"> ₹139000/- - ₹189000/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../public/image/earphones/buds.png" alt="Sample photo!">
+                    <h1>Apple Buds</h1>
+                    <div class="price"> ₹12500/- - ₹16999/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../public/image/earphones/dgwatch.png" alt="Sample photo!">
+                    <h1>Apple Watch 3 pro</h1>
+                    <div class="price"> ₹62000/- - ₹65000/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../public/image/cloths/jacket2.png" alt="Sample photo!">
+                    <h1>Denim Jacket</h1>
+                    <div class="price"> ₹700/- - ₹1200/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../public/image/shoes/shoes1.png" alt="Sample photo!">
+                    <h1>Leather Shoes</h1>
+                    <div class="price"> ₹700/- - ₹899/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../public/image/mobile/phone8.png" alt="Sample photo!">
+                    <h1>Samsung S16 pro</h1>
+                    <div class="price"> ₹55000/- - ₹59200/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="../public/image/earphones/headphone.png" alt="Sample photo!">
+                    <h1>JBL Headphone</h1>
+                    <div class="price"> ₹6999/- - ₹7499/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../public/image/earphones/watch.png" alt="Sample photo!">
+                    <h1>Air Jordan</h1>
+                    <div class="price"> ₹1650/- - ₹1990/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../public/image/cloths/shirt3.png" alt="Sample photo!">
+                    <h1>Full Sleeve Shirt</h1>
+                    <div class="price"> ₹699/- - ₹899/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../public/image/shoes/shoes9.png" alt="Sample photo!">
+                    <h1>Nike Shoes</h1>
+                    <div class="price"> ₹3490/- - ₹3990/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../public/image/mobile/phone5.png" alt="Sample photo!">
+                    <h1>Samsung S8 plus</h1>
+                    <div class="price"> ₹42000/- - ₹49900/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../public/image/earphones/speaker.png" alt="Sample photo!">
+                    <h1>JBL Speaker pro</h1>
+                    <div class="price"> ₹6990/- - ₹7490/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../public/image/mobile/phone.png" alt="Sample photo!">
+                    <h1>Apple iphone 14 plus</h1>
+                    <div class="price"> ₹79000/- - ₹89900/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../public/image/shoes/shoes5.png" alt="Sample photo!">
+                    <h1>Addidas Shoes</h1>
+                    <div class="price"> ₹4200/- - ₹4500/-</div>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands" id="brands">
+        <div class="box-container">
+            <div class="box">
+                <h3 class="heading">Our <span>Brands</span></h3>
+                <div class="brand-img">
+                    <img src="../public/Image/Apple.png" alt="Apple">
+                    <img src="../public/Image/peter-england.png" alt="Peter-England">
+                    <img src="../public/Image/puma.png" alt="Puma">
+                    <img src="../public/Image/levis.png" alt="Levis">
+                    <img src="../public/Image/campus.png" alt="Campus">
+                    <img src="../public/Image/samsung.png" alt="Samsung">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{!-- Contact Us --}}
+        <div class="contact_us" id="contact">
+            <form method="POST" action="/contactdata">
+                <h2 class="heading"><span>Contact Us</span></h2>
+                <p class="text-center">Contact The Help Team</p>
+                <div class="mb-3">
+                    <label for="username" class="form-label">user name </label>
+                    <input name="user" type="text" class="form-control" id="username">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="mb-2">type your message here...</label>
+                    <div class="form-floating">
+                        <textarea name="msg" class="form-control" placeholder="Leave a comment here"
+                            id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2"></label>
+                    </div>
+                </div>
+                <button name="submit" type="submit" class="cmt-btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+    <!-- Footer Section -->
+    <section class="footer" id="about">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fa fa-shopping-bag"></i> ShopperSite</h3>
+                <p>Feel Free To Follow Us on our social media handler All the links are given below.</p>
+
+                <div class="share">
+                    <a href="https://www.facebook.com/profile.php?id=100022184535658" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/iAbhishekDixit" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/i_abhishekdixit/" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/abhishek-dixit-279baa18a/" class="fa fa-linkedin"></a>
+                    <a href="#contact" class="fa fa-comments"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#" class="links"> <i class="fa fa-phone"></i> +91 9999888776</a>
+                <a href="#" class="links"> <i class="fa fa-phone"></i> +91 9999988888</a>
+                <a href="#" class="links"> <i class="fa fa-envelope"></i> imr.abhishekdixit@gmail.com</a>
+                <a href="#" class="links"> <i class="fa fa-map-marker"></i> Jaipur,India - 302039</a>
+            </div>
+
+            <div class="box">
+                <h3> Quick Links </h3>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Home</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Features</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Categories</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Products</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Brands</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Contact Us</a>
+            </div>
+
+            <div class="box">
+                <h3> Newsletter </h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="Your email.." class="email">
+                <input type="submit" value="Subscribe" class="btn">
+                <img src="../public/image/payment.png" class="payment-img" alt="Sample photo!">
+            </div>
+        </div>
+        <div class="credit">&copy;2023 |<span> ShopperSite.com</span></div>
+    </section>
+
+
+<!-- Swipper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>    
+
+
+    <script src="js/bootstrap.min.js"></script>
+    {{!-- <script src="../src/app.js"></script> --}}
+</body>
+</html>
